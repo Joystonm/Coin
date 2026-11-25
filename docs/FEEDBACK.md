@@ -151,10 +151,12 @@ curl -H "X-CMC_PRO_API_KEY: $CMC_API_KEY" \
 ```
 
 **Why it matters.** Without it, the only visibility into execution cost is the
-DEX endpoints — and **most tokenized-asset wrappers have no DEX pool that
+DEX endpoints — and **many tokenized-asset wrappers have no DEX pool that
 CoinMarketCap prices.** Their liquidity may sit on a broker or an ATS, which
-`market-pairs/list` would show and the DEX endpoints cannot. In our pull, the
-majority of the wrappers we looked up had no priced pool at all.
+`market-pairs/list` would show and the DEX endpoints cannot. In the committed
+fixture, 2 of the 16 wrappers we looked up have no priced pool at all — and
+for those two we cannot measure the execution cost at all, which is a
+different fact from "it is expensive".
 
 The absence of a pool is *not* evidence of illiquidity, and a consumer that
 treats it as such will report a false negative on a genuinely tradable asset.

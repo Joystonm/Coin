@@ -320,7 +320,7 @@ anchor.
 
 **`market-pairs/list` is refused on the free plan (severity 3).** The endpoint
 that would show where tokenized assets actually quote returns
-`error_code 1006` on the Startup tier. Since most wrappers have no DEX pool
+`error_code 1006` on the Startup tier. Since many wrappers have no DEX pool
 CoinMarketCap prices, venue-level liquidity for RWA wrappers is invisible to
 us. We record those execution costs as **unknown**, never zero — absence of a
 pool is not evidence of a free trade.

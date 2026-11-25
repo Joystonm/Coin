@@ -489,7 +489,7 @@ export function detectFindings(
   if (noPool.length) {
     findings.push({
       id: 'no-visible-venue',
-      title: 'Most tokenized wrappers have no DEX pool CoinMarketCap prices',
+      title: 'A wrapper can have no DEX pool CoinMarketCap prices',
       detail: `${noPool.length} wrappers of the ones we looked up have no DEX pool with a priced liquidity figure. Their liquidity may sit on a broker or an ATS, which the RWA market-pairs endpoint would show but which our plan does not expose. We record their execution cost as unknown rather than zero.`,
       endpoint: '/v1/dex/token/pools',
       evidence: `${noPool.length} wrappers with no priced pool`,
