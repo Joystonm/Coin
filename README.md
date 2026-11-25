@@ -137,6 +137,25 @@ can run. The headline one:
 Full write-up in [`docs/FEEDBACK.md`](docs/FEEDBACK.md). It is also the answer
 to the brief's question about where the API got in the way.
 
+## Continuous integration
+
+Three workflows, all in [`.github/workflows/`](.github/workflows):
+
+| workflow | what it does | needs |
+| --- | --- | --- |
+| `ci.yml` | typecheck → test → build, then two guards: nothing key-shaped is committed, and no `.env` is tracked | nothing |
+| `live.yml` | pulls live data weekly (Mondays 06:17 UTC) and uploads the snapshot and the raw evidence as artifacts. **Commits nothing** | `CMC_API_KEY` |
+| `deploy.yml` | builds and deploys to Vercel on every push | `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` |
+
+Add the secrets under **Settings → Secrets and variables → Actions** and the
+matching workflow starts working on its own — no file edit. Until then those two
+jobs report *"nothing to do"* and go green, rather than showing a red X.
+
+The key guards in `ci.yml` are the mechanical form of the hackathon's rule:
+*do not commit keys to a public repo, or they will ask you to rotate it and it
+counts against code quality.* The build fails rather than trusting a human to
+notice.
+
 ## Documentation
 
 | document | what it is for |
