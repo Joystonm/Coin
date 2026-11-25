@@ -144,12 +144,19 @@ Three workflows, all in [`.github/workflows/`](.github/workflows):
 | workflow | what it does | needs |
 | --- | --- | --- |
 | `ci.yml` | typecheck → test → build, then two guards: nothing key-shaped is committed, and no `.env` is tracked | nothing |
+| `pages.yml` | builds the site and publishes it to **https://joystonm.github.io/Coin/** | Pages enabled (one click) |
 | `live.yml` | pulls live data weekly (Mondays 06:17 UTC) and uploads the snapshot and the raw evidence as artifacts. **Commits nothing** | `CMC_API_KEY` |
-| `deploy.yml` | builds and deploys to Vercel on every push | `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` |
+| `deploy.yml` | builds and deploys to Vercel on every push — this one serves the hosted API as well | `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` |
 
 Add the secrets under **Settings → Secrets and variables → Actions** and the
-matching workflow starts working on its own — no file edit. Until then those two
+matching workflow starts working on its own — no file edit. Until then those
 jobs report *"nothing to do"* and go green, rather than showing a red X.
+
+Two deployment paths, on purpose. **Pages** is the zero-account one: the site
+is static and the snapshot is committed, so it needs no key and no third-party
+setup. **Vercel** is the fuller one, because it serves `/api/judge`,
+`/api/provenance`, `/api/findings` and `/api/snapshot` alongside the site.
+Turn Pages on under **Settings → Pages → Source: GitHub Actions**.
 
 The key guards in `ci.yml` are the mechanical form of the hackathon's rule:
 *do not commit keys to a public repo, or they will ask you to rotate it and it

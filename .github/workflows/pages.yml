@@ -4,11 +4,17 @@ name: Pages
 #
 # This is the zero-account demo path: the site is static, the snapshot is
 # committed, and Pages needs no third-party setup. Vercel is the fuller
-# deployment — it serves the hosted API as well — but the demo link works
-# either way, and a judge should never land on a 404.
+# deployment — it serves the hosted API as well — but the demo link should
+# work either way, and a judge should never land on a 404.
 #
 # The site is served from https://joystonm.github.io/Coin/, so the build runs
 # with BASE_PATH=/Coin/ and the front-end reads that same value back.
+#
+# Publishing is off until you turn it on, deliberately: enabling Pages creates
+# a public URL, so that is your decision to make, not this repository's. Turn
+# it on under Settings -> Pages -> Source: GitHub Actions, and the next push
+# publishes. Until then this workflow reports "nothing to publish" and goes
+# green.
 
 on:
   push:
@@ -29,30 +35,60 @@ jobs:
     name: build the site
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      ready: ${{ steps.guard.outputs.ready }}
     steps:
+      # The guard.
+      #
+      # A repository without Pages enabled has nothing to publish, and that
+      # should read as "nothing to do" rather than as a failure — a red X on
+      # the Actions tab is the first thing a judge sees.
+      - name: check whether GitHub Pages is enabled
+        id: guard
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          status=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$REPO/pages")
+          if [ "$status" = "200" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::GitHub Pages is not enabled for this repository — nothing to publish. Turn it on under Settings -> Pages -> Source: GitHub Actions."
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.guard.outputs.ready == 'true'
 
       - uses: actions/setup-node@v4
+        if: steps.guard.outputs.ready == 'true'
         with:
           node-version: 20
           cache: npm
 
       - run: npm ci
+        if: steps.guard.outputs.ready == 'true'
 
       - name: Build
         env:
           BASE_PATH: '/Coin/'
         run: npm run build
+        if: steps.guard.outputs.ready == 'true'
 
       - uses: actions/configure-pages@v5
+        if: steps.guard.outputs.ready == 'true'
 
       - uses: actions/upload-pages-artifact@v3
+        if: steps.guard.outputs.ready == 'true'
         with:
           path: dist
 
   deploy:
     name: deploy to Pages
     needs: build
+    if: needs.build.outputs.ready == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:

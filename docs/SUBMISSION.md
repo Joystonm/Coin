@@ -431,6 +431,19 @@ before it goes anywhere.
 - [ ] The demo script in `docs/DEMO.md` has been run at least once, out loud
 - [ ] The X post is posted, and the demo video is attached to it
 
+**Deployment — one of these, so the demo link is live**
+
+- [ ] **GitHub Pages** (zero setup): **Settings → Pages → Source: GitHub
+      Actions**. The `pages.yml` workflow publishes
+      `https://joystonm.github.io/Coin/` on the next push. No key, no account.
+- [ ] **Vercel** (serves the hosted API too): add `VERCEL_TOKEN`,
+      `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` as repository secrets, or run
+      `vercel deploy --prod` once and connect the project. `deploy.yml` then
+      deploys on every push.
+- [ ] Open the deployed URL and check the **Findings** page loads — it is the
+      one that needs `public/data/snapshot.json` to be served alongside the
+      bundle.
+
 **Deadline**
 
 > Submissions close **9 December 2026, 23:59 UTC**. Leave a day. The demo
