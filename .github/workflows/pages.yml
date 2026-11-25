@@ -1,0 +1,63 @@
+name: Pages
+
+# Publishes the dashboard to GitHub Pages.
+#
+# This is the zero-account demo path: the site is static, the snapshot is
+# committed, and Pages needs no third-party setup. Vercel is the fuller
+# deployment — it serves the hosted API as well — but the demo link works
+# either way, and a judge should never land on a 404.
+#
+# The site is served from https://joystonm.github.io/Coin/, so the build runs
+# with BASE_PATH=/Coin/ and the front-end reads that same value back.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: build the site
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build
+        env:
+          BASE_PATH: '/Coin/'
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

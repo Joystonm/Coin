@@ -89,6 +89,15 @@ export function buildData(
 }
 
 /**
+ * Where the built site is served from.
+ *
+ * '/' for a root domain, '/Coin/' for GitHub Pages, where a project lives
+ * under a subpath. Vite writes the same value into the bundle, so the data
+ * files are found wherever the site is hosted.
+ */
+const BASE = import.meta.env.BASE_URL;
+
+/**
  * Fetch the snapshot the build ships with, from the static server.
  *
  * The history file is fetched alongside it, and a missing history file is not
@@ -96,8 +105,8 @@ export function buildData(
  * an addition, and the UI says which arms it has.
  */
 export async function loadData(
-  url = '/data/snapshot.json',
-  historyUrl = '/data/history.json',
+  url = `${BASE}data/snapshot.json`,
+  historyUrl = `${BASE}data/history.json`,
 ): Promise<AppData> {
   const response = await fetch(url);
   if (!response.ok) {

@@ -12,6 +12,11 @@ import react from '@vitejs/plugin-react';
  */
 export default defineConfig({
   plugins: [react()],
+  // Where the site is served from. '/' for a root domain (Vercel), and
+  // '/<repo>/' for GitHub Pages, where the project lives under a subpath.
+  // Set BASE_PATH in the environment to change it; the front-end reads the
+  // same value back through `import.meta.env.BASE_URL`.
+  base: process.env.BASE_PATH ?? '/',
   build: {
     outDir: 'dist',
     // The app is a single static bundle; no code splitting beyond the default.
