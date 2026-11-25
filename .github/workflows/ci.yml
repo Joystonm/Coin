@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: typecheck, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Guard against a committed key
+        # The hackathon rules are explicit: never commit a key, and the
+      # organisers will ask for a rotation if you do. This fails the build
+      # rather than trusting a human to notice.
+        run: |
+          set -euo pipefail
+          if git grep -nEI '(X-CMC_PRO_API_KEY|CMC_API_KEY)[[:space:]]*[:=][[:space:]]*["'"'"']?[A-Za-z0-9]{16,}' \
+              -- . ':!.env.example' ':!docs' ':!*.md' ':!.github/workflows/*' ; then
+            echo "::error::An API key appears to be committed. Revoke it, remove it, and rotate it."
+            exit 1
+          fi
+          echo "no key found in the tree"
+
+      - name: Guard against a committed .env
+        run: |
+          set -euo pipefail
+          if git ls-files --error-unmatch .env .env.local >/dev/null 2>&1; then
+            echo "::error::A .env file is tracked by git. Remove it from the index and rotate the key."
+            exit 1
+          fi
+          echo "no .env is tracked"

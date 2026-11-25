@@ -1,0 +1,82 @@
+name: Live pull
+
+# Proves the pipeline works against the real CoinMarketCap API.
+#
+# This job never commits anything. It pulls live data, runs the analysis over
+# it, and uploads the snapshot and the raw evidence as artifacts — so the
+# receipts of a real pull are inspectable without a key, and the repository
+# stays deterministic.
+#
+# Run it on demand from the Actions tab, or let the schedule keep it honest.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mondays at 06:17 UTC. Off the hour on purpose: a shared cron slot is
+    # the busiest minute of the week.
+    - cron: '17 6 * * 1'
+
+concurrency:
+  group: live-pull
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    name: pull live from CoinMarketCap
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Pull the snapshot
+        env:
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
+          # A smaller universe keeps the job inside the free tier's credit
+          # budget. Widen these by editing the workflow, not by raising the
+          # plan.
+          CTS_ASSET_LIMIT: '120'
+          CTS_DEPTH_ASSETS: '40'
+          CTS_DEPTH_WRAPPERS: '4'
+          CTS_SIZE_USD: '100000'
+        run: npm run snapshot
+
+      - name: Pull the history
+        env:
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
+          CTS_HISTORY_DAYS: '30'
+          CTS_HISTORY_ASSETS: '40'
+        run: npm run history
+
+      - name: Analyse the live pull
+        run: |
+          set -euo pipefail
+          npm run cli -- summary > live-summary.txt 2>&1 || true
+          npm run cli -- findings >> live-summary.txt 2>&1 || true
+          cat live-summary.txt
+
+      - name: Upload the snapshot and the evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-snapshot
+          path: |
+            public/data/snapshot.json
+            public/data/history.json
+            live-summary.txt
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload the raw receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-evidence
+          path: evidence/
+          if-no-files-found: ignore
+          retention-days: 30

@@ -1,0 +1,969 @@
+{
+  "generatedAt": "2026-11-25T08:36:12.279Z",
+  "source": "fixture",
+  "window": {
+    "days": 30,
+    "start": "2026-10-27T08:37:12.279Z",
+    "end": "2026-11-25T08:37:12.279Z",
+    "interval": "daily"
+  },
+  "assets": [
+    {
+      "rwaId": 2,
+      "symbol": "NVDA",
+      "name": "Nvidia Corp",
+      "slug": "nvidia",
+      "assetType": "stock",
+      "points": [
+        {
+          "timestamp": "2026-10-27T08:37:12.279Z",
+          "price": 146.12608529076317,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-28T08:37:12.279Z",
+          "price": 146.01553026303705,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-29T08:37:12.279Z",
+          "price": 147.5150093504547,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-30T08:37:12.279Z",
+          "price": 147.80526232321913,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-31T08:37:12.279Z",
+          "price": 148.04892591040567,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-01T08:37:12.279Z",
+          "price": 147.4470319533189,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-02T08:37:12.279Z",
+          "price": 150.09087429939046,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-03T08:37:12.279Z",
+          "price": 148.36303056849295,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-04T08:37:12.279Z",
+          "price": 146.6491433785101,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-05T08:37:12.279Z",
+          "price": 145.57267778036018,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-06T08:37:12.279Z",
+          "price": 145.1689295199282,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-07T08:37:12.279Z",
+          "price": 143.7970646705798,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-08T08:37:12.279Z",
+          "price": 145.54139204461,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-09T08:37:12.279Z",
+          "price": 148.44422086372342,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-10T08:37:12.279Z",
+          "price": 145.97834377181877,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-11T08:37:12.279Z",
+          "price": 149.17779730995423,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-12T08:37:12.279Z",
+          "price": 150.28158193965191,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-13T08:37:12.279Z",
+          "price": 151.95871946246805,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-14T08:37:12.279Z",
+          "price": 154.55383778084314,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-15T08:37:12.279Z",
+          "price": 153.1329663546097,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-16T08:37:12.279Z",
+          "price": 154.86717326575373,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-17T08:37:12.279Z",
+          "price": 155.71661991179406,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-18T08:37:12.279Z",
+          "price": 152.92969329233324,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-19T08:37:12.279Z",
+          "price": 155.7367139256681,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-20T08:37:12.279Z",
+          "price": 155.56100047470284,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-21T08:37:12.279Z",
+          "price": 152.74239830752683,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-22T08:37:12.279Z",
+          "price": 154.29081309191284,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-23T08:37:12.279Z",
+          "price": 155.80503205561035,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-24T08:37:12.279Z",
+          "price": 152.0112815478532,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-25T08:37:12.279Z",
+          "price": 150.57314791465885,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        }
+      ]
+    },
+    {
+      "rwaId": 1,
+      "symbol": "GOLD",
+      "name": "Gold",
+      "slug": "gold",
+      "assetType": "commodity",
+      "points": [
+        {
+          "timestamp": "2026-10-27T08:37:12.279Z",
+          "price": 3526.351496476108,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-28T08:37:12.279Z",
+          "price": 3525.732825092151,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-29T08:37:12.279Z",
+          "price": 3520.326530889038,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-30T08:37:12.279Z",
+          "price": 3523.035318861676,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-31T08:37:12.279Z",
+          "price": 3515.3769142158003,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-01T08:37:12.279Z",
+          "price": 3508.145682436899,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-02T08:37:12.279Z",
+          "price": 3520.0347829858256,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-03T08:37:12.279Z",
+          "price": 3527.808713152183,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-04T08:37:12.279Z",
+          "price": 3538.177558384733,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-05T08:37:12.279Z",
+          "price": 3542.4220096907475,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-06T08:37:12.279Z",
+          "price": 3536.8723842757336,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-07T08:37:12.279Z",
+          "price": 3542.2457530952242,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-08T08:37:12.279Z",
+          "price": 3546.3899540212456,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-09T08:37:12.279Z",
+          "price": 3536.409825568251,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-10T08:37:12.279Z",
+          "price": 3543.0956147338165,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-11T08:37:12.279Z",
+          "price": 3543.5950707536686,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-12T08:37:12.279Z",
+          "price": 3544.8764566940913,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-13T08:37:12.279Z",
+          "price": 3551.6061233656346,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-14T08:37:12.279Z",
+          "price": 3547.1015566238434,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-15T08:37:12.279Z",
+          "price": 3553.326255159181,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-16T08:37:12.279Z",
+          "price": 3545.197945471395,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-17T08:37:12.279Z",
+          "price": 3517.457433614836,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-18T08:37:12.279Z",
+          "price": 3522.3106312320115,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-19T08:37:12.279Z",
+          "price": 3519.5497820435935,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-20T08:37:12.279Z",
+          "price": 3546.083625667501,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-21T08:37:12.279Z",
+          "price": 3557.8426837603893,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-22T08:37:12.279Z",
+          "price": 3547.768912218748,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-23T08:37:12.279Z",
+          "price": 3544.655770028815,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-24T08:37:12.279Z",
+          "price": 3530.5315580281413,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-25T08:37:12.279Z",
+          "price": 3524.4462350344797,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        }
+      ]
+    },
+    {
+      "rwaId": 9,
+      "symbol": "SPY",
+      "name": "SPDR S&P 500 ETF Trust",
+      "slug": "spdr-sp-500-etf-trust",
+      "assetType": "etf",
+      "points": [
+        {
+          "timestamp": "2026-10-27T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-28T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-29T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-30T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-31T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-01T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-02T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-03T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-04T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-05T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-06T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-07T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-08T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-09T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-10T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-11T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-12T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-13T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-14T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-15T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-16T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-17T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-18T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-19T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-20T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-21T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-22T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-23T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-24T08:37:12.279Z",
+          "price": 605,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-25T08:37:12.279Z",
+          "price": 604.18,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        }
+      ]
+    },
+    {
+      "rwaId": 10,
+      "symbol": "TLT",
+      "name": "iShares 20+ Year Treasury Bond ETF",
+      "slug": "ishares-20-year-treasury-bond-etf",
+      "assetType": "etf",
+      "points": [
+        {
+          "timestamp": "2026-10-27T08:37:12.279Z",
+          "price": 86.56692957842444,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-28T08:37:12.279Z",
+          "price": 86.55198797358669,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-29T08:37:12.279Z",
+          "price": 86.5127417862071,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-30T08:37:12.279Z",
+          "price": 86.54319298732823,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-31T08:37:12.279Z",
+          "price": 86.24464610996522,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-01T08:37:12.279Z",
+          "price": 86.4409906261168,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-02T08:37:12.279Z",
+          "price": 86.14202476603747,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-03T08:37:12.279Z",
+          "price": 86.2159335448091,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-04T08:37:12.279Z",
+          "price": 87.00192850377066,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-05T08:37:12.279Z",
+          "price": 86.68855556113719,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-06T08:37:12.279Z",
+          "price": 87.00996566241237,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-07T08:37:12.279Z",
+          "price": 87.31402552554384,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-08T08:37:12.279Z",
+          "price": 87.45318867764688,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-09T08:37:12.279Z",
+          "price": 87.21150713103388,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-10T08:37:12.279Z",
+          "price": 86.64892630809146,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-11T08:37:12.279Z",
+          "price": 86.8629944103345,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-12T08:37:12.279Z",
+          "price": 87.09932561920927,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-13T08:37:12.279Z",
+          "price": 86.94799089763607,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-14T08:37:12.279Z",
+          "price": 87.22287001249077,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-15T08:37:12.279Z",
+          "price": 87.15565088413584,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-16T08:37:12.279Z",
+          "price": 86.98777680351965,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-17T08:37:12.279Z",
+          "price": 87.19947007213887,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-18T08:37:12.279Z",
+          "price": 87.36226657475359,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-19T08:37:12.279Z",
+          "price": 87.58830037990228,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-20T08:37:12.279Z",
+          "price": 87.60347324879326,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-21T08:37:12.279Z",
+          "price": 87.7117674613938,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-22T08:37:12.279Z",
+          "price": 87.94079528316075,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-23T08:37:12.279Z",
+          "price": 88.17197349600366,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-24T08:37:12.279Z",
+          "price": 88.09967201769375,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-25T08:37:12.279Z",
+          "price": 88.41,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        }
+      ]
+    },
+    {
+      "rwaId": 12,
+      "symbol": "AAPL",
+      "name": "Apple Inc",
+      "slug": "apple-inc",
+      "assetType": "stock",
+      "points": [
+        {
+          "timestamp": "2026-10-27T08:37:12.279Z",
+          "price": 237.0037843518787,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-28T08:37:12.279Z",
+          "price": 236.8558931672807,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-29T08:37:12.279Z",
+          "price": 239.07809742209196,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-30T08:37:12.279Z",
+          "price": 241.7815733760828,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-10-31T08:37:12.279Z",
+          "price": 244.90681730077915,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-01T08:37:12.279Z",
+          "price": 247.12571128087203,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-02T08:37:12.279Z",
+          "price": 250.64817774558634,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-03T08:37:12.279Z",
+          "price": 251.10664517464758,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-04T08:37:12.279Z",
+          "price": 249.86774493667164,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-05T08:37:12.279Z",
+          "price": 248.78884043168844,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-06T08:37:12.279Z",
+          "price": 249.24131494612212,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-07T08:37:12.279Z",
+          "price": 247.88787143730525,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-08T08:37:12.279Z",
+          "price": 244.46473822307908,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-09T08:37:12.279Z",
+          "price": 242.51715911230912,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-10T08:37:12.279Z",
+          "price": 241.51806152873786,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-11T08:37:12.279Z",
+          "price": 241.00015995733568,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-12T08:37:12.279Z",
+          "price": 237.49577251955614,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-13T08:37:12.279Z",
+          "price": 235.42555406893948,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-14T08:37:12.279Z",
+          "price": 236.76695323170983,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-15T08:37:12.279Z",
+          "price": 234.4443366784762,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-16T08:37:12.279Z",
+          "price": 231.3224239443116,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-17T08:37:12.279Z",
+          "price": 228.48932119266792,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-18T08:37:12.279Z",
+          "price": 230.90585051637498,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-19T08:37:12.279Z",
+          "price": 227.65893528963122,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-20T08:37:12.279Z",
+          "price": 226.39974753720864,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-21T08:37:12.279Z",
+          "price": 224.7034910894944,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-22T08:37:12.279Z",
+          "price": 222.75553537001016,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-23T08:37:12.279Z",
+          "price": 225.62559466724016,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-24T08:37:12.279Z",
+          "price": 228.89480115883788,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        },
+        {
+          "timestamp": "2026-11-25T08:37:12.279Z",
+          "price": 231.43999999999997,
+          "tokenizedMarketCap": null,
+          "tokenizedVolume24h": null
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "endpoint": "/v5/real-world-assets/quotes/historical",
+      "query": "rwa_id=2,1,9,10,12&interval=daily&time_start=2026-10-27T08:37:12.279Z&time_end=2026-11-25T08:37:12.279Z&convert=USD",
+      "credits": 1,
+      "errorCode": 0,
+      "errorMessage": null,
+      "elapsedMs": 26,
+      "at": "2026-11-25T08:36:13.279Z"
+    }
+  ],
+  "apiIssues": []
+}
