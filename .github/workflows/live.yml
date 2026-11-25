@@ -25,6 +25,9 @@ jobs:
     name: pull live from CoinMarketCap
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    # Skipped, not failed, until a key is configured. Set CMC_API_KEY in the
+    # repository secrets and the weekly pull starts on its own.
+    if: ${{ secrets.CMC_API_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
 
